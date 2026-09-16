@@ -25,7 +25,7 @@ GET_TEMP        { out ":TEMP$1:VALUE?";           in "%f";}
 
 GET_MOTOR_POSITIONS {
     out ":MOTOR:POSITIONS?";
-    in "MOTOR X: %f, MOTOR Y: %($1:Y_POS)f, MOTOR Z: %($1:Z_POS)f ";
+    in "MOTOR X: %f, MOTOR Y: %(\$1:Y_POS)f, MOTOR Z: %(\$1:Z_POS)f ";
 }
 
 # see https://paulscherrerinstitute.github.io/StreamDevice/tipsandtricks.html#multiline for more examples
