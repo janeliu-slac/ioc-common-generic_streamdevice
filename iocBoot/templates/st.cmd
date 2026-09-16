@@ -6,8 +6,9 @@ epicsEnvSet( "LOCATION",  "$$LOCATION" )
 epicsEnvSet( "IOCSH_PS1", "$(IOCNAME)> " )
 epicsEnvSet( "IOC_PV",	  "$$IOC_PV" )
 epicsEnvSet( "IOCTOP",	  "$$IOCTOP" )
-epicsEnvSet( "STREAM_PROTOCOL_PATH", "$(IOCTOP)/app/srcProtocol" )
+
 < envPaths
+epicsEnvSet( "STREAM_PROTOCOL_PATH", "$(IOCTOP)/app/srcProtocol" )
 epicsEnvSet("TOP", "$$TOP")
 cd("$(IOCTOP)")
 
