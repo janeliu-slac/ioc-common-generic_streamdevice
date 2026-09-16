@@ -27,9 +27,6 @@ ARCHIVE += gsd.archive
 #
 REQ += gsd.req
 
-# Nothing to build for autosave, just install from $AUTOSAVE/db
-DB_INSTALLS += $(AUTOSAVE)/db/save_restoreStatus.db
-
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
