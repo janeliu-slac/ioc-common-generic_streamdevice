@@ -18,7 +18,7 @@ GET_ID        { out ":IDN?";           in "%s";}
 
 # reading a float "%f"
 # $1, $2 ... define variables passed from record, useful when many channels
-GET_TEMP        { out ":TEMP$1:VALUE?";           in "%f";}
+GET_TEMP        { out ":TEMP\$1:VALUE?";           in "%f";}
 
 # update several records from a single response 
 # $1 in this example is the PV prefix for the motor position records
