@@ -19,14 +19,16 @@ DB += gsd.db
 # Create and install (or just install)
 # Archive files, templates, substitutions like this
 #
+# SLAC EPICS Base archive rule expects a .sub-arch input when generating a 
+# .archive file.
 ARCHIVE += gsd.archive
 
 #----------------------------------------------------
 # Create and install (or just install)
 # Autosave request files, templates, substitutions like this
 #
-# EPICS Base autosave rule expects a .sub-req input file in app/Db/ when generating a 
-# .req file
+# SLAC EPICS Base autosave rule expects a .sub-req input when generating a 
+# .req file. The rule is $(COMMON_DIR)/%.req %.req: %.sub-req
 REQ += gsd.req
 
 include $(TOP)/configure/RULES
