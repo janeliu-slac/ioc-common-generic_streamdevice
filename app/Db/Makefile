@@ -25,6 +25,8 @@ ARCHIVE += gsd.archive
 # Create and install (or just install)
 # Autosave request files, templates, substitutions like this
 #
+# EPICS Base autosave rule expects a .sub-req input file in app/Db/ when generating a 
+# .req file
 REQ += gsd.req
 
 include $(TOP)/configure/RULES
